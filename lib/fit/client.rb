@@ -1,4 +1,6 @@
 require 'fit/client/version'
+require 'fit/client/service'
+require 'fit/client/workout'
 
 module Fit
   # Fit::Client provides an interface for interactive with the aerobic.io
@@ -6,15 +8,7 @@ module Fit
   #
   module Client
     class << self
-      attr_accessor :api_token, :service_uri
-
-      def test_mode!
-        @test_mode = true
-      end
-
-      def test_mode
-        @test_mode == true
-      end
+      attr_accessor :api_token, :service_host, :service_port, :use_ssl
     end
   end
 end

@@ -1,7 +1,9 @@
 require 'fit/client'
 
 require 'minitest/autorun'
+require 'minitest/nc'
 require 'minitest/spec'
+require 'webmock/minitest'
 
 module MiniTest
   # Monkey patch MiniTest::Spec to include a context method.
