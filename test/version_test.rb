@@ -1,7 +1,7 @@
 require 'test_helper'
 
 describe Fit::Client do
-  describe "VERSION" do
+  describe 'VERSION' do
     subject { Fit::Client::VERSION }
 
     it { subject.must_be_instance_of(String) }
