@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Fit::Client::VERSION
   spec.authors       = ["Gareth Townsend"]
   spec.email         = ["gareth.townsend@me.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A ruby gem for interacting with the aerobic.io fit-service.}
+  spec.description   = %q{A ruby gem for interacting with the aerobic.io fit-service.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
