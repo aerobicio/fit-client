@@ -5,20 +5,16 @@ module Fit
   # fit-service.
   #
   module Client
-    def self.api_token=(uri)
-      @@api_token = uri
-    end
+    class << self
+      attr_accessor :api_token, :service_uri
 
-    def self.api_token
-      @@api_token
-    end
+      def test_mode!
+        @test_mode = true
+      end
 
-    def self.service_uri=(uri)
-      @@service_uri = uri
-    end
-
-    def self.service_uri
-      @@service_uri
+      def test_mode
+        @test_mode == true
+      end
     end
   end
 end
