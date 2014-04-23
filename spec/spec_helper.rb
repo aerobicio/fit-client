@@ -1,7 +1,7 @@
 require 'fit/client'
 
 require 'minitest/autorun'
-require 'minitest/nc'if RUBY_PLATFORM.include?("darwin")
+require 'minitest/nc' if RUBY_PLATFORM.include?('darwin')
 require 'minitest/spec'
 require 'webmock/minitest'
 
