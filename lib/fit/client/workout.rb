@@ -32,7 +32,7 @@ module Fit
         @workout_uuid = response['uuid']
         @end_time = Time.zone.parse(response['end_time'])
         @start_time = Time.zone.parse(response['start_time'])
-        @sport = repsonse['sport']
+        @sport = response['sport']
       end
 
       private
