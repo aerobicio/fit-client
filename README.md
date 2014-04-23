@@ -1,6 +1,6 @@
 # Fit::Client
 
-TODO: Write a gem description
+A ruby gem for interacting with the aerobic.io fit-service.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Don't use this. The fit-service is private.
 
 ## Contributing
 
