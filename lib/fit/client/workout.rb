@@ -7,7 +7,7 @@ module Fit
     class Workout
       attr_accessor :device_id, :device_workout_id, :fit_file, :member_id
       attr_accessor :distance, :active_duration, :duration, :end_time
-      attr_accessor :start_time, :id, :workout_uuid
+      attr_accessor :start_time, :id, :workout_uuid, :sport
 
       def self.create(device_id, device_workout_id, fit_file, member_id)
         workout = new(device_id, device_workout_id, fit_file, member_id)
@@ -32,6 +32,7 @@ module Fit
         @workout_uuid = response['uuid']
         @end_time = Time.zone.parse(response['end_time'])
         @start_time = Time.zone.parse(response['start_time'])
+        @sport = repsonse['sport']
       end
 
       private
